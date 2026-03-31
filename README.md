@@ -22,7 +22,7 @@ Exposes four tools to Claude:
 ### 1. Install dependencies
 
 ```bash
-cd "coastline-intel"
+cd "harbour-play-competitor-intel"
 pip install -r requirements.txt
 ```
 
@@ -61,9 +61,9 @@ Add the server to your Claude Code MCP config. Open (or create) `~/.claude/setti
 ```json
 {
   "mcpServers": {
-    "coastline-intel": {
+    "harbour-play-intel": {
       "command": "python",
-      "args": ["/FULL/PATH/TO/coastline-intel/server.py"],
+      "args": ["/FULL/PATH/TO/harbour-play-intel/server.py"],
       "env": {
         "ANTHROPIC_API_KEY": "sk-ant-..."
       }
@@ -72,13 +72,13 @@ Add the server to your Claude Code MCP config. Open (or create) `~/.claude/setti
 }
 ```
 
-Replace `/FULL/PATH/TO/coastline-intel/server.py` with the actual path on your machine. For example:
+Replace `/FULL/PATH/TO/harbour-play-intel/server.py` with the actual path on your machine. For example:
 
 ```
-/Users/yourname/vibe Project/coastline-intel/server.py
+/Users/yourname/vibe Project/harbour-play-intel/server.py
 ```
 
-> **Tip:** Run `pwd` inside the `coastline-intel` folder to get the full path.
+> **Tip:** Run `pwd` inside the `harbour-play-intel` folder to get the full path.
 
 Restart Claude Code after saving the config.
 
@@ -89,7 +89,7 @@ Restart Claude Code after saving the config.
 Once connected, ask Claude things like:
 
 - "Read the brand brief and competitor notes, then generate a competitor intelligence report."
-- "Use the coastline-intel tools to analyse our competitors and give me recommendations."
+- "Use the harbour-play-intel tools to analyse our competitors and give me recommendations."
 - "Call generate_competitor_insights and save the output to report.md."
 
 Claude will call the tools in sequence and return the full markdown report.
@@ -99,7 +99,7 @@ Claude will call the tools in sequence and return the full markdown report.
 ## File structure
 
 ```
-coastline-intel/
+harbour-play-intel/
 ├── server.py           # MCP server
 ├── requirements.txt    # Python dependencies
 ├── README.md           # This file
