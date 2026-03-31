@@ -1,6 +1,6 @@
-# Coastline Intel — Competitor Intelligence MCP Server
+# Harbour Play — Competitor Intelligence MCP Server
 
-A local MCP server for Harbour Play that reads brand and competitor data and generates a markdown intelligence report using Claude.
+A lightweight Claude Code + MCP demo project for a fictional Irish entertainment brand, designed to turn competitor inputs into structured marketing intelligence and actionable recommendations.
 
 ---
 
